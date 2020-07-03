@@ -56,10 +56,8 @@ class Todo {
         body.addEventListener('click', (event) => {
             const target = event.target;
             if(target.closest('.todo-remove')) {
-                this.deleteItem.bind(this);
                 return this.deleteItem(target)
             } else if(target.closest('.todo-complete')) {
-                this.completedItem.bind(this);
                 return this.completedItem(target)
             }
         });       
